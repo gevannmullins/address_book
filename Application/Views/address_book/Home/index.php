@@ -121,11 +121,11 @@ include_once "./config.php";
         });
         return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
                 table_html +
-                '<tr><td colspan="3" align="center"><a class="ajax_loader new_button" href="#">Add New Contact Information</a></td></tr>'+
+                '<tr><td colspan="3" align="center"><a class="new_button ajax_loader" href="#">Add New Contact Information</a></td></tr>'+
                 '</table>';
     }
 
-    $(document).ready(function() {
+    // $(document).ready(function() {
 
         $.ajax({
             method: "GET",
@@ -147,7 +147,7 @@ include_once "./config.php";
                         { "data": "contact.date_created" },
                         { "data": function ( data, type, row ) {
                                 console.log(data);
-                                return '<a class="ajax_loader edit_button" value="'+data.contact.id+'" href="#">Edit</a><a class="ajax_loader delete_button" value="'+data.contact.id+'" href="#">Delete</a>';
+                                return '<a class="edit_button ajax_loader" value="'+data.contact.id+'" href="#">Edit</a><a class="delete_button ajax_loader" value="'+data.contact.id+'" href="#">Delete</a>';
                             }
                         }
                     ],
@@ -171,7 +171,7 @@ include_once "./config.php";
             }
         });
 
-    } );
+    // } );
 </script>
 
 <script>

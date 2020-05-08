@@ -126,7 +126,10 @@ class ModelsAddressbook extends Model {
     {
         // sql statement
         $sql = "INSERT INTO contacts (name, surname, nickname, date_created, date_updated) VALUES ('$name', '$surname', '$nickname', '$date_created', '$date_updated')";
-        return $this->db->query($sql);
+        if($this->db->query($sql)->success){
+            return $this->db->getLastId();
+        }
+        return false;
     }
 
     public function newContactInfo($contact_id, $contact_type, $contact_value, $date_created, $date_updated)
