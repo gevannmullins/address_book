@@ -1,0 +1,82 @@
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+  $("#menu").accordion();
+  $(".colors a").click(function() {
+    if ($(this).attr("class") != "default") {
+      $("#menu").removeClass();
+      $("#menu").addClass("menu").addClass($(this).attr("class"));
+    } else {
+      $("#menu").removeClass();
+      $("#menu").addClass("menu");
+    }
+  });
+});
+</script>
+
+<div class="content">
+
+  <!-- color seletor -->
+  <div class="colors">
+    <a href="javascript:void(0)" class="default"> </a>
+    <a href="javascript:void(0)" class="blue"> </a>
+    <a href="javascript:void(0)" class="white"></a>
+  </div>
+
+  <!-- nav menu container -->
+  <nav>
+    <div id="menu" class="menu">
+
+      <!-- menu header -->
+      <div class="menu-header"> API MENU </div>
+
+      <!-- menu links -->
+      <ul>
+        <!-- home / dashboard -->
+        <li class="active"><a href="/api/v1/home"><i class="fa fa-home"></i>Home</a></li>
+        <!-- users -->
+        <li><a href="#"><i class="fa fa-file-image-o"> </i>Users</a>
+          <!-- sub-menu -->
+          <ul class="submenu">
+            <li><a href="/api/v1/users"> GetUsers</a></li>
+            <li><a href="/api/v1/users/getbyusername/"> GetUserByUsername</a></li>
+            <li><a href="#"> GetUserById</a></li>
+            <li><a href="#"> GetUserProjects</a></li>
+            <li><a href="#"> GetUserTasks</a></li>
+          </ul>
+        </li>
+        <!-- accounts -->
+        <li><a href="#"><i class="fa fa-cog"> </i>Services</a>
+          <ul class="submenu">
+            <li><a href="#"> Web Design </a>
+              <ul class="submenu">
+                <li><a href="#"> WordPress</a></li>
+                <li><a href="#"> Joomla</a></li>
+              </ul>
+            </li>
+            <li><a href="#"> Hosting</a></li>
+            <li><a href="#"> Design </a></li>
+          </ul>
+        </li>
+        <!-- campaigns -->
+        <li><a href="#"><i class="fa fa-newspaper-o"> </i>News<span class="menu-label"> 8 </span></a></li>
+        <!-- super-admin -->
+        <li><a href="#"><i class="fa fa-user"> </i>About</a></li>
+        <!-- system settings -->
+        <li><a href="#"><i class="fa fa-envelope"> </i> Contact</a></li>
+        <!-- teamwork -->
+        <li><a href="#"><i class="fa fa-file-image-o"> </i>Teamwork</a>
+        <!-- sub-menu -->
+        <ul class="submenu">
+          <li><a href="/api/v1/teamwork/users"> GetUsers</a></li>
+          <li><a href="/api/v1/teamwork/projects"> GetUsers</a></li>
+          <li><a href="/api/v1/teamwork/milestones"> GetUsers</a></li>
+          <li><a href="/api/v1/teamwork/tasklists"> GetUsers</a></li>
+          <li><a href="/api/v1/teamwork/tasks"> GetUsers</a></li>
+        </ul>
+      </li>
+
+
+      </ul>
+    </div>
+  </nav>
+</div>

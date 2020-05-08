@@ -1,0 +1,108 @@
+table th,
+table td{
+  text-align: left;
+}
+table.layout{
+  width: 100%;
+  border-collapse: collapse;
+}
+table.display{
+  margin: 1em 0;
+}
+table.display th,
+table.display td{
+  /*border: 1px solid #B3BFAA;*/
+  border-top: 1px solid #B3BFAA;
+  padding: .5em 1em;
+  font-size:14px;
+}
+
+/* Zebra striping */
+/*table.responsive-table tr:nth-of-type(odd) { 
+  background: #eee; 
+}*/
+
+/*table.display th{ background: #D5E0CC; }
+table.display td{ background: #fff; }*/
+
+table.responsive-table{
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*@media (max-width: 30em){*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+    table.responsive-table{
+      box-shadow: none;  
+    }
+    table.responsive-table thead{
+      display: none; 
+    }
+  table.display th,
+  table.display td{
+    padding: .5em;
+  }
+    
+  table.responsive-table td:nth-child(1):before{
+    content: 'Start Date:';
+  }
+  table.responsive-table td:nth-child(2):before{
+    content: 'End Date:';
+  }
+  table.responsive-table td:nth-child(3):before{
+    content: 'Creative:';
+  }
+  table.responsive-table td:nth-child(4):before{
+    content: 'Channels:';
+  }
+  table.responsive-table td:nth-child(5):before{
+    content: 'Branch:';
+  }
+  table.responsive-table td:nth-child(6):before{
+    content: '';
+  }
+  table.responsive-table td:nth-child(1),
+  table.responsive-table td:nth-child(2),
+  table.responsive-table td:nth-child(3),
+  table.responsive-table td:nth-child(4),
+  table.responsive-table td:nth-child(5),
+  table.responsive-table td:nth-child(6){
+    padding-left: 25%;
+  }
+  table.responsive-table td:nth-child(1):before,
+  table.responsive-table td:nth-child(2):before,
+  table.responsive-table td:nth-child(3):before,
+  table.responsive-table td:nth-child(4):before,
+  table.responsive-table td:nth-child(5):before,
+  table.responsive-table td:nth-child(6):before{
+    position: absolute;
+    left: .5em;
+    font-weight: bold;
+  }
+  
+    table.responsive-table tr,
+    table.responsive-table td{
+        display: block;
+    }
+    table.responsive-table tr{
+        position: relative;
+        margin-bottom: 1em;
+    	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    }
+    table.responsive-table td{
+        border-top: none;
+		/*border-top: 1px solid #B3BFAA;*/
+    }
+    table.responsive-table td.organisationnumber{
+        background: #0A98DB;
+        /*border-top: 1px solid #A1C938;*/
+    }
+    table.responsive-table td.actions{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
+}
