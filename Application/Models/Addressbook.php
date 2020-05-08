@@ -122,11 +122,10 @@ class ModelsAddressbook extends Model {
 
     }
 
-    public function newContact($name, $surname, $nickname, $date_created)
+    public function newContact($name, $surname, $nickname, $date_created, $date_updated)
     {
         // sql statement
-        $sql = "INSERT INTO contacts (name, surname, nickname, date_created)
-                VALUES ($name, $surname, $nickname, $date_created)";
+        $sql = "INSERT INTO contacts (name, surname, nickname, date_created, date_updated) VALUES ('$name', '$surname', '$nickname', '$date_created', '$date_updated')";
         return $this->db->query($sql);
 
     }

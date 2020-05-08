@@ -78,10 +78,11 @@ class ControllersAddressbook  extends Controller {
         $surname = $query['surname'];
         $nickname = $query['nickname'];
         $date_created = date('Y-m-d H:i:s');
+        $date_updated = date('Y-m-d H:i:s');
 //        print_r($query);
 
         $model = $this->model('addressbook');
-        $contact = $model->newContact($name,$surname,$nickname,$date_created);
+        $contact = $model->newContact($name,$surname,$nickname,$date_created,$date_updated);
         // Send Response
         $this->response->sendStatus(200);
         $this->response->setContent($contact);
