@@ -3,10 +3,10 @@
 /**
  * The Web View/Interface Routes
  */
-$router->get('/', 'Web@index');
+//$router->get('/', 'Web@index');
 
 // address book
-$router->get('/address_book', 'Addressbook@view_addressbook');
+$router->get('/', 'Addressbook@view_addressbook');
 $router->get('/address_book/add_new_view', 'Addressbook@view_new_addressbook');
 
 /**
