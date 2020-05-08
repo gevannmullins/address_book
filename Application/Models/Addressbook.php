@@ -127,16 +127,14 @@ class ModelsAddressbook extends Model {
         // sql statement
         $sql = "INSERT INTO contacts (name, surname, nickname, date_created, date_updated) VALUES ('$name', '$surname', '$nickname', '$date_created', '$date_updated')";
         return $this->db->query($sql);
-
     }
 
-    public function newContactInfo($contact_id, $contact_type, $contact_value, $date_created)
+    public function newContactInfo($contact_id, $contact_type, $contact_value, $date_created, $date_updated)
     {
         // sql statement
-        $sql = "INSERT INTO contact_information (contact_id, contact_type, contact_value, date_created)
-                VALUES ($contact_id, $contact_type, $contact_value, $date_created)";
+        $sql = "INSERT INTO contact_information (contact_id, contact_type, contact_value, date_created, date_updated) VALUES ('$contact_id', '$contact_type', '$contact_value', '$date_created', '$date_updated')";
 
-        return $this->db->query($sql)->success;
+        return $this->db->query($sql);
 
     }
 

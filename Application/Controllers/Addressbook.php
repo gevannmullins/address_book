@@ -89,10 +89,17 @@ class ControllersAddressbook  extends Controller {
 
     }
 
-    public function addNewContactInfo($param)
+    public function addNewContactInfo()
     {
+        $query = $this->request->request;
+        $contact_id = $query['contact_id'];
+        $contact_type = $query['contact_type'];
+        $contact_value = $query['contact_value'];
+        $date_created = date('Y-m-d H:i:s');
+        $date_updated = date('Y-m-d H:i:s');
+
         $model = $this->model('addressbook');
-        $contact = $model->newContactInfo($param);
+        $contact = $model->newContactInfo($contact_id,$contact_type,$contact_value,$date_created,$date_updated);
         // Send Response
         $this->response->sendStatus(200);
         $this->response->setContent($contact);

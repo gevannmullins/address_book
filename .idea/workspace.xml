@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5523ad9-0d34-45e0-ba4d-d6ff434734e9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/Controllers/Addressbook.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Controllers/Addressbook.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/Models/Addressbook.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Models/Addressbook.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Views/address_book/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Views/address_book/500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Views/address_book/Home/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Views/address_book/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Router/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/Router/Router.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +49,13 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="address_book: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="contact_information: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="address_book: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="contacts: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
@@ -53,17 +66,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Router/Router.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="272">
+              <caret line="18" column="86" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="86" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Controllers/Addressbook.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="384">
+              <caret line="101" column="110" selection-start-line="101" selection-start-column="110" selection-end-line="101" selection-end-column="110" />
               <folding>
                 <element signature="n#view_addressbook#0;n#ControllersAddressbook#0;n#!!top" />
                 <element signature="n#view_new_addressbook#0;n#ControllersAddressbook#0;n#!!top" />
@@ -76,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Models/Addressbook.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+            <state relative-caret-position="382">
+              <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
               <folding>
                 <element signature="n#getAllAddressBookData#0;n#ModelsAddressbook#0;n#!!top" />
                 <element signature="n#getAllContacts#0;n#ModelsAddressbook#0;n#!!top" />
@@ -92,6 +105,8 @@
                 <element signature="n#getCountContacts#0;n#ModelsAddressbook#0;n#!!top" />
                 <element signature="n#getCountPhoneNumbers#0;n#ModelsAddressbook#0;n#!!top" />
                 <element signature="n#getCountAddresses#0;n#ModelsAddressbook#0;n#!!top" />
+                <element signature="n#newEntry#0;n#ModelsAddressbook#0;n#!!top" />
+                <element signature="n#newContact#0;n#ModelsAddressbook#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -119,9 +134,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Application/Models/Addressbook.php" />
         <option value="$PROJECT_DIR$/Router/Router.php" />
         <option value="$PROJECT_DIR$/Application/Controllers/Addressbook.php" />
-        <option value="$PROJECT_DIR$/Application/Models/Addressbook.php" />
       </list>
     </option>
   </component>
@@ -173,6 +188,21 @@
             <path>
               <item name="address_book" type="b2602c69:ProjectViewProjectNode" />
               <item name="address_book" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+              <item name="address_book" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="address_book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="address_book" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+              <item name="address_book" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="address_book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="address_book" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -199,6 +229,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mullins-Laptop\Documents\realm\address_book\Application\Views\address_book" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -221,12 +256,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588937201720</updated>
-      <workItem from="1588937213665" duration="3193000" />
+      <workItem from="1588937213665" duration="3871000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3193000" />
+    <option name="totallyTimeSpent" value="3871000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -257,30 +292,8 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Router/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/58b5ad58-75b4-4a63-be20-527aa5453484/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Controllers/Addressbook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
-          <folding>
-            <element signature="n#view_addressbook#0;n#ControllersAddressbook#0;n#!!top" />
-            <element signature="n#view_new_addressbook#0;n#ControllersAddressbook#0;n#!!top" />
-            <element signature="n#index#0;n#ControllersAddressbook#0;n#!!top" />
-            <element signature="n#getAllContacts#0;n#ControllersAddressbook#0;n#!!top" />
-            <element signature="n#searchAddress#0;n#ControllersAddressbook#0;n#!!top" />
-            <element signature="n#newEntry#0;n#ControllersAddressbook#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Models/Users.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -301,8 +314,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Models/Addressbook.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+        <state relative-caret-position="382">
+          <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
           <folding>
             <element signature="n#getAllAddressBookData#0;n#ModelsAddressbook#0;n#!!top" />
             <element signature="n#getAllContacts#0;n#ModelsAddressbook#0;n#!!top" />
@@ -314,6 +327,30 @@
             <element signature="n#getCountContacts#0;n#ModelsAddressbook#0;n#!!top" />
             <element signature="n#getCountPhoneNumbers#0;n#ModelsAddressbook#0;n#!!top" />
             <element signature="n#getCountAddresses#0;n#ModelsAddressbook#0;n#!!top" />
+            <element signature="n#newEntry#0;n#ModelsAddressbook#0;n#!!top" />
+            <element signature="n#newContact#0;n#ModelsAddressbook#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Router/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="86" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Controllers/Addressbook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="101" column="110" selection-start-line="101" selection-start-column="110" selection-end-line="101" selection-end-column="110" />
+          <folding>
+            <element signature="n#view_addressbook#0;n#ControllersAddressbook#0;n#!!top" />
+            <element signature="n#view_new_addressbook#0;n#ControllersAddressbook#0;n#!!top" />
+            <element signature="n#index#0;n#ControllersAddressbook#0;n#!!top" />
+            <element signature="n#getAllContacts#0;n#ControllersAddressbook#0;n#!!top" />
+            <element signature="n#searchAddress#0;n#ControllersAddressbook#0;n#!!top" />
+            <element signature="n#newEntry#0;n#ControllersAddressbook#0;n#!!top" />
           </folding>
         </state>
       </provider>
